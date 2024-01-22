@@ -6,6 +6,10 @@
 		{
 			"name": "capstone-project",
 			"path": "capstone-project"
+		},
+		{
+			"name": "capstone-project-1",
+			"path": "capstone-project-1"
 		}
 	],
 	"settings": {}

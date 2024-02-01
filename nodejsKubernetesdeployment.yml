@@ -14,8 +14,18 @@ spec:
       labels:
         app: nodeapp 
     spec:
-    containers:
+      containers:
       - name: nodeserver
         image: capstoneproject:latest
         ports:
         - containerPort: 2000
+        imagePullPolicy: Always
+      
+        resources:
+          limits:
+            cpu: "0.5"  # You can adjust the CPU limit based on your requirements
+            memory: "512Mi"  # You can adjust the memory limit based on your requirements
+          requests:
+            cpu: "0.1"  # You can adjust the CPU request based on your requirements
+            memory: "256Mi"  # You can adjust the memory request based on your requirements
+
